@@ -1,20 +1,23 @@
-
 # 🧩 Matt Parker's 5-Word Alphabet Challenge
 
-Inspired by Matt Parker’s brilliant linguistic puzzle, this repository explores the challenge of finding **five English words** that together use **25 unique letters** — meaning they collectively contain every letter of the alphabet **except one**.
+Inspired by Matt Parker’s brilliant linguistic puzzle, this project explores the challenge of finding **five English words** that together use **25 unique letters** — every letter of the alphabet **except one**.
+
+---
 
 ## 🎯 The Goal
 
-To discover or generate sets of **five valid English words** that:
+Find sets of **five valid English words** that:
 - Use a total of **25 different letters**
-- Contain **no repeated letters across the words**
-- Miss **exactly one letter** from the English alphabet (A–Z)
+- Have **no repeated letters across the words**
+- Miss **exactly one letter** from A–Z
 
-This is also known as the "**Pangram Minus One**" challenge.
+This is also known as a **"Pangram Minus One"**.
 
-## 📝 Example
+---
 
-Here’s an example 5-word set that uses 25 unique letters, missing only **Q**:
+## ✅ Example
+
+Example 5-word set (missing letter: **Q**):
 
 ```
 fjord
@@ -24,38 +27,69 @@ vex
 swag
 ```
 
-Letters used: All except **Q**
+These words together use all letters except **Q**.
 
-## 🧠 Why?
+---
 
-This is a fun test of:
-- Vocabulary and word structure
-- Letter distribution in English
-- Creative problem-solving!
+## 🚀 How to Run
 
-It also touches on combinatorics and algorithmic generation — a great excuse to explore code and linguistics.
+### 1. 🛠️ Prerequisites
 
-## 🛠️ How to Use This Repo
+- A C++ compiler that supports C++17 or later (e.g., `g++`)
+- A terminal (Linux, macOS, or WSL on Windows)
+- A word list file like `words.txt` (one word per line, 5-letter words recommended)
 
-- `sets/` — contains text files with different valid 5-word sets
-- `scripts/` — code to generate and validate word sets
-- `dictionary/` — word lists and filtered dictionaries used by scripts
+### 2. 🧾 Compile the Program
 
-## 🚀 How to Contribute
+From your project folder:
 
-Pull requests welcome! Whether you're:
-- Adding new 5-word sets
-- Writing tools to find new combinations
-- Improving performance
-- Creating visualizations of letter usage
+```bash
+g++ solution.cpp -o solution -O2 -std=c++17 -pthread
+```
 
-Let’s build this puzzle together.
+### 3. ▶️ Run the Program
+
+Assuming your `words.txt` file is in the same folder:
+
+```bash
+./solution
+```
+
+> The program automatically reads `words.txt`.
+
+You’ll see output like:
+
+```
+Found: fjord blanket chimp vex swag (missing: q)
+...
+Done. Found 163 valid sets.
+```
+
+---
+
+## 🗂️ Folder Structure
+
+- `words.txt` – input dictionary file (you can replace this with any word list)
+- `solution.cpp` – main C++ program to find valid 5-word sets
+
+---
+
+## 🤝 Contributions
+
+Pull requests welcome! You can contribute by:
+- Adding new optimized search strategies (e.g., GPU, distributed)
+- Improving speed/memory efficiency
+- Adding visualizations or statistics
+
+---
 
 ## 📚 Credits
 
 - Inspired by [Matt Parker (Stand-up Maths)](https://www.youtube.com/user/standupmaths)
-- Word lists sourced from [SCOWL](http://wordlist.aspell.net/) and other open dictionaries
+- Word list: [SCOWL](http://wordlist.aspell.net/) and others
+
+---
 
 ## 🧩 License
 
-MIT — feel free to fork, modify, and share!
+MIT — free to use, modify, and share.
