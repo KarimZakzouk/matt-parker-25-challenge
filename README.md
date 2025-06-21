@@ -17,17 +17,17 @@ This is also known as a **"Pangram Minus One"**.
 
 ## ✅ Example
 
-Example 5-word set (missing letter: **Q**):
+Example 5-word set (missing letter: **Z**):
 
 ```
-fjord
-blanket
-chimp
-vex
-swag
+wrung
+jambe
+qophs
+vicky
+fldxt
 ```
 
-These words together use all letters except **Q**.
+These words together use all letters except **Z**.
 
 ---
 
